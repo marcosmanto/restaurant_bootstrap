@@ -1,0 +1,157 @@
+@import "components/variables";
+
+/*
+01. BASE RULES
+*/
+
+body {
+    background: $primary-background;
+    font-family: $body-copy;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $primary-text;
+}
+h1 {}
+ul,
+ol {
+}
+li {
+}
+a, a:link, a:visited {
+    color: $primary-link-color;
+}
+a:hover {
+    color: $primary-link-color-hover;
+}
+p {
+}
+hr {
+}
+
+/*
+02. LAYOUT
+Styles specific to your layout or website
+*/
+.container {
+    background-color: $white;
+}
+
+.header {
+    padding: ($padding * 4) 0;
+}
+
+.header .container {
+    background: $primary-background;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-nav {
+    line-height: 36px; // vertical center with logo
+    ul {
+        margin-bottom: 0;
+    }
+    li.divider {
+        color: $grey;
+    }
+    a {
+        text-decoration: none;
+        // border-color: $grey;
+        &:hover {
+            border-bottom: ($border-size * 5) $border-type $grey;
+            transition: border-width 0.2s ease;
+        }
+    }
+}
+
+.public-banner  {
+    .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.home-food{
+    text-align: center;
+    img {
+        padding-bottom: $padding ;
+    }
+}
+
+.home-about {
+    padding: ($padding * 4) 0 ($padding * 6) 0;
+}
+
+.reviews {
+    padding: ($padding * 4) 0 ($padding * 6) 0;
+    .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.price {
+    color: $red1;
+    font-weight: 700;
+}
+
+.contact {
+    iframe {
+        width: 100%;
+    }
+}
+
+.footer {
+    text-align: center;
+    color: $inverse-text;
+    padding-bottom: ($padding * 4);
+    .container {
+        background: $inverse-background;
+        padding: ($padding * 4) 0;
+    }
+    .social-media {
+        padding: $padding 0;
+        a {
+            padding: 0 ($padding - 0.5);
+            color: $white;
+            &:hover {
+                color: $grey;
+            }
+        }
+    }
+}
+
+.page-body {
+    padding: ($padding * 4);
+}
+
+.about {
+    .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .social-media {
+        margin: ($margin * 2) 0;
+        font-size: ($font-size * 2);
+    }
+}
+
+/*
+03. MODULES
+Import modules here.
+*/
+@import "components/typography";
+@import "components/carousel";
+
+/*
+04. STATES
+*/
+
+/*
+05. THEME
+*/
